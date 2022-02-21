@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>RCHLO Up!Tech</title>
+    
+</head>
+<body>
+<div class="container">
+    <!--Introducao-->
+        <div class="jumbotron jumbotron-fluid">
+              <h1 class="display-4 text-center ">Ótima escolha!</h1>
+              <p class="lead text-center">Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.</p>
+            </div>
+
+            <!--Produto-->
+            <div class="card border-black ">
+                <p class="text-center MD font-weight-bold">Sua Compra</p>
+            </div>
+            <div class="card border-black ">
+            <img src="img/camisa.jpg" class="img-fluid" alt="camisa">
+            <h4>Produto</h4>
+            <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+            <h4>Cor</h4>
+            <p>Branco</p>
+            <h4>Tamanho</h4>
+            <p>G</p>
+            <h4>Preço</h4>
+            <p>R$69,90</p>
+          </div>
+
+          <!--Dados Pessoais-->
+          <h3>Dados pessoais</h3>
+          <form>
+            <div class="form-group">
+                <label for="firtName">Nome completo</label>
+                <input type="txt" class="form-control" id="firstName" aria-describedby="firstName" placeholder=""  maxlength="200" required="">
+              </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="email@exemplo.com"  maxlength="300" required="">
+            </div>
+            <div class="form-group">
+                <label for="CPF">CPF</label>
+                <input type="txt" class="form-control" id="CPF" aria-describedby="CPF" placeholder="000.000.000-00"  maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" required="">
+              </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Quero receber a newsletter da RCHLO</label>
+            </div>
+          
+
+          <!--Cartao de Credito-->
+            <h3>Cartão de Crédito</h3>
+            
+              <div class="form-group">
+                  <label for="firtName">Numero - CVV</label>
+                  <input type="txt" class="form-control" id="cartao" aria-describedby="cartao" placeholder=""  maxlength="3" required="">
+                </div>
+                <div class="form-group">
+                    <p>Bandeira</p>
+                  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"></label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required="">
+                      <option selected> </option>
+                      <option value="1">Visa</option>
+                      <option value="2">Mastercard</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="validade">Validade</label>
+                  <input type="date" class="form-control" id="validade" aria-describedby="validade" placeholder="" required="">
+                </div>
+
+              <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+          </form>
+          </div>
+        </div>
+</html>
